@@ -103,6 +103,7 @@ public class AutonomousTrajectoryRioCommand extends PPSwerveControllerCommand {
 
   // Called when the command is initially scheduled.
   @Override
+  //Changed initialization (Made it unabstracted)
   public void initialize() {
     trajectory = trajectorySupplier.get();
     if (useAllianceColor && trajectory.fromGUI) {
